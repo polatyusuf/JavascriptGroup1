@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Rock, Paper, Scissors</h1>
+  
+    <section class="game-rules">
+      <h2>Game Rules</h2>
+      <ul>
+        <li>Scissors beats Paper</li>
+        <li>Paper beats Rock</li>
+        <li>Rock beats Scissors</li>
+      </ul>
+    </section>
+
+    <div class="choices">
+      <button onclick="playGame('rock')">Rock</button>
+      <button onclick="playGame('paper')">Paper</button>
+      <button onclick="playGame('scissors')">Scissors</button>
+    </div>
+    
+    <div class="score-board">
+      <div id="player-score">Player Score: 0</div>
+      <div id="computer-score">Computer Score: 0</div>
+    </div>
+
+    <div id="result" class="result">Choose an option to play!</div>
+    <button class="play-again-btn" onclick="resetGame()">Play Again</button>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">@Yusuf, Sara, Sabrina, and Olena</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
