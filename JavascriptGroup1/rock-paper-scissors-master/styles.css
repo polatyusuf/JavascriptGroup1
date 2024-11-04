@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background-color: #fff;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.rock, .paper, .scissors {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.rock {
+  background-image: url('./images/icon-rock.svg');
+}
+
+.paper {
+  background-image: url('./images/icon-paper.svg');
+}
+
+.scissors {
+  background-image: url('./images/icon-scissors.svg');
+}
+
+.score {
+  margin: 15px 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+#player, #computer {
+  margin: 5px 0;
+}
+
+.result, .compChoice {
+  font-size: 1.1em;
+  color: #444;
+  margin: 10px 0;
+}
+
+.reset {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 15px;
+}
+
+.reset:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 500px) {
+  .rock, .paper, .scissors {
+    width: 80px;
+    height: 80px;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  .score {
+    font-size: 1em;
+  }
+
+  .result, .compChoice {
+    font-size: 1em;
+  }
+}
