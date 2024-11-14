@@ -11,9 +11,9 @@
     <h1>Rock, Paper, Scissors</h1>
 
     <div class="choices">
-      <button class="rock" onclick="playGame('rock')"><img src="./images/icon-rock.svg" alt="Rock"></button>
-      <button class="paper" onclick="playGame('paper')"><img src="./images/icon-paper.svg" alt="Paper"></button>
-      <button class="scissors" onclick="playGame('scissors')"><img src="./images/icon-scissors.svg" alt="Scissors"></button>
+      <button class="rock" onclick="playGame('rock')"><img src="./images/icon-rock.svg" alt="Rock"/></button>
+      <button class="paper" onclick="playGame('paper')"><img src="./images/icon-paper.svg" alt="Paper"/></button>
+      <button class="scissors" onclick="playGame('scissors')"><img src="./images/icon-scissors.svg" alt="Scissors"/></button>
       
     </div>
 
@@ -24,6 +24,11 @@
 
     <div id="result" class="result">Choose an option to play!</div>
     <div id="compChoice" class="compChoice"></div>
+
+
+    <div id="playerChoice" class="playerChoice">You choose: 
+      <img id="playerImage" src="" alt="Your choice" style="width: 100px; height: 100px;">
+    </div>
     
     <button class="reset" onclick="resetGame()">Play Again</button>
   </div>

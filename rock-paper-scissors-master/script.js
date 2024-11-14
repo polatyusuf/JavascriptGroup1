@@ -4,13 +4,14 @@ let computerScore = 0;
 function playGame(humanChoice) {
     // Array
     const choices = ["rock", "paper", "scissors"];
-    
-    // Zufällige Auswahl des Computers
     const computerChoice = choices[Math.floor(Math.random() * choices.length)];
-    document.getElementById("compChoice").innerText = `Computer chose: ${computerChoice}`; //Anzeige der Computerwahl auf der Webseite
-    console.log(`Computer chose: ${computerChoice}`); 
+    const imgPath = "images/";
 
+    document.getElementById("compChoice").innerText = `Computer choose: ${computerChoice}`; //Anzeige der Computerwahl auf der Webseite
+    console.log(`Computer choose: ${computerChoice}`); 
+    //document.getElementById("playerChoice").innerText=`You choose: ${humanChoice}`;
     // Vergleich zwischen der wahl des Menschen un der Wahl de Computers
+   
     let resultMessage;
     if ((humanChoice === "scissors" && computerChoice === "paper") || 
         (humanChoice === "paper" && computerChoice === "rock") || 
@@ -25,6 +26,7 @@ function playGame(humanChoice) {
         resultMessage = `${computerChoice} beats ${humanChoice}, Computer wins!`;
         computerScore++;
     }
+    
 
     // // Anzeige des results auf der Webseite
     document.getElementById("result").innerText = resultMessage;
@@ -32,6 +34,10 @@ function playGame(humanChoice) {
     // Aktualisierung der Punktzahl aud der Webseite
     document.getElementById("player").innerText = `Player: ${playerScore}`;
     document.getElementById("computer").innerText = `Computer: ${computerScore}`;
+
+    document.getElementById("playerImage").src = `${imgPath}${humanChoice}.png`;
+    
+
 }
 
 //Zurückstzen
