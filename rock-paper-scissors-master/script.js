@@ -35,8 +35,9 @@ function playGame(humanChoice) {
     document.getElementById("player").innerText = `Player: ${playerScore}`;
     document.getElementById("computer").innerText = `Computer: ${computerScore}`;
 
-    document.getElementById("playerImage").src = `${imgPath}${humanChoice}.png`;
-    
+    // document.getElementById("playerImage").src = `${imgPath}${humanChoice}.svg`;
+    document.getElementById("playerImage").src = `${imgPath}${humanChoice}.svg`;
+    console.log(`${imgPath}${humanChoice}.svg`)
 
 }
 
